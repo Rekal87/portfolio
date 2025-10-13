@@ -10,7 +10,7 @@ export function App() {
       <div className="flex items-end gap-6">
         <h1
           className="uppercase font-extrabold text-9xl -rotate-180"
-          style={{ writingMode: `vertical-lr` }}
+          style={{ writingMode: `vertical-lr`, userSelect: "none" }}
         >
           nnamdi
         </h1>
