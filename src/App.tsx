@@ -8,7 +8,10 @@ export function App() {
   return (
     <div className="w-full items-center flex justify-center min-h-screen">
       <div className="flex items-end gap-6">
-        <h1 className="[writing-mode: vertical-lr] uppercase font-extrabold text-9xl -rotate-90">
+        <h1
+          className="uppercase font-extrabold text-9xl -rotate-180"
+          style={{ writingMode: `vertical-lr` }}
+        >
           nnamdi
         </h1>
         <div className="h-full flex flex-col gap-8">
