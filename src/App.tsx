@@ -1,37 +1,31 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { APITester } from "./APITester";
-import "./index.css";
+// TODO: Ensure the correct path to the card components. Update the path below if needed.
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import { Item } from "@radix-ui/react-select";
+import "./index.css";
+import { ItemHeader } from "./components/ui/item";
 
 export function App() {
   return (
-    <div className="container mx-auto p-8 text-center relative z-10">
-      <div className="flex justify-center items-center gap-8 mb-8">
-        <img
-          src={logo}
-          alt="Bun Logo"
-          className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#646cffaa] scale-120"
-        />
-        <img
-          src={reactLogo}
-          alt="React Logo"
-          className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa] [animation:spin_20s_linear_infinite]"
-        />
+    <div className="w-full items-center flex justify-center min-h-screen">
+      <div className="flex items-end gap-6">
+        <h1 className="[writing-mode: vertical-lr] uppercase font-extrabold text-9xl -rotate-90">
+          nnamdi
+        </h1>
+        <div className="h-full flex flex-col gap-8">
+          <a className="uppercase font-extrabold text-6xl">
+            <h2>stuff</h2>
+          </a>
+          <a className="uppercase font-extrabold text-6xl">
+            <h2>about</h2>
+          </a>
+          <a className="uppercase font-extrabold text-6xl">
+            <h2>games</h2>
+          </a>
+          <a href="#" className="uppercase font-extrabold text-6xl">
+            <h2>projects</h2>
+          </a>
+        </div>
       </div>
-      <Card>
-        <CardHeader className="gap-4">
-          <CardTitle className="text-3xl font-bold">Bun + React</CardTitle>
-          <CardDescription>
-            Edit <code className="rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono">src/App.tsx</code> and save to
-            test HMR
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <APITester />
-        </CardContent>
-      </Card>
     </div>
   );
 }
