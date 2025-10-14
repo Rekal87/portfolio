@@ -1,8 +1,4 @@
-// TODO: Ensure the correct path to the card components. Update the path below if needed.
-
-import { Item } from "@radix-ui/react-select";
 import "./index.css";
-import { ItemHeader } from "./components/ui/item";
 
 export function App() {
   return (
